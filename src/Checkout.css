@@ -3,6 +3,7 @@
   padding: 20px;
   background-color: white;
   height: max-content;
+  flex-wrap: wrap;
 }
 .checkout__ad {
   width: 100%;

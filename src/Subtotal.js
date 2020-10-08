@@ -1,21 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Subtotal.css";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
 import { getBasketTotal } from "./reducer";
+import { useHistory } from "react-router-dom";
 
 function Subtotal() {
+  const history = useHistory()
   const [{ basket }, dispatch] = useStateValue();
-
-  const [value, setValue] = useState(0);
-  /*const sumItems = () => {
-     let total = basket.map((item) => item.price);
-    let result = 0;
-  for (let i = 0; i < basket.length; i++) {
-       result = total[0] + result;
-     }
-     return result;
-   };*/
 
   return (
     <div className="subtotal">
@@ -38,7 +30,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"€"}
       />
-      <button>Proceed to Checkout</button>
+      <button onClick={e => history.push('/payment')} >Proceed to Checkout</button>
     </div>
   );
 }

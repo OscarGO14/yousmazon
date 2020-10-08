@@ -10,6 +10,7 @@
   max-height: 400px;
   min-width: 100px;
   z-index: 1;
+  overflow: hidden;
 }
 .product__info {
   width: 100%;

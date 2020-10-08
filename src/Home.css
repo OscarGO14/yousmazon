@@ -17,3 +17,11 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+@media (max-width: 500px) {
+  .home__row {
+    flex-wrap: wrap;
+  }
+  .home__image {
+    margin-bottom: 0;
+  }
+}

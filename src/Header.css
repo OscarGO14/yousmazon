@@ -1,6 +1,7 @@
 .header {
   height: 60px;
   display: flex;
+  width: 100%;
   align-items: center;
   background-color: #131921;
   position: sticky;
@@ -33,6 +34,7 @@
 .header__nav {
   display: flex;
   justify-content: space-evenly;
+  flex: 0;
 }
 .header__option {
   display: flex;
@@ -55,5 +57,23 @@
 }
 .header__basketCount {
   margin-right: 10px;
-  margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .header__logo {
+    width: 50px;
+    margin: 0 10px;
+  }
+  .header__searchInput {
+    padding: 5px;
+  }
+  .header__searchIcon {
+    height: 14px !important;
+    width: 14px !important;
+  }
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  .header__optionLineTwo {
+    font-size: 10px;
+  }
 }
