@@ -28,3 +28,8 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
+@media (max-width: 500px) {
+  .subtotal {
+    max-width: 200px;
+  }
+}
